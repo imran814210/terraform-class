@@ -1,1 +1,27 @@
+Module 3: Infrastructure as Code and Terraform Introduction
+WEEK 3 · FOUNDATION
+Topics
+1. What is Infrastructure as Code (IaC)?
+2. Manual infrastructure vs automated infrastructure
+3. Declarative vs imperative configuration
+4. Terraform vs Ansible vs CloudFormation
+5. Terraform architecture and providers
+6. Terraform Community Edition vs HCP Terraform
+7. Installing Terraform CLI
+8. Installing VS Code and Terraform extension
+9. Terraform Registry
+10. Provider version constraints
+11. Provider configuration and authentication
+12. Understanding the Terraform dependency graph
+13. Understanding state and desired infrastructure
+Core commands
+terraform version
+terraform init
+terraform fmt
+terraform validate
+terraform plan
+terraform apply
+terraform show
+terraform destroy
+Hands-on lab: Create your first AWS S3 bucket or EC2 instance using Terraform and destroy it safely afterward.
 
