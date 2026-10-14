@@ -1,0 +1,367 @@
+Module 1: IT, Linux and Cloud Fundamentals
+WEEK 1 · BEGINNER
+Topics
+1. Introduction to DevOps and Cloud Engineering
+2. What is a server? Physical vs virtual servers
+3. Operating systems and Linux fundamentals
+4. Linux commands: ls, cd, mkdir, cat, grep, find, chmod, ssh
+5. Linux filesystem, users, permissions and processes
+6. Bash scripting fundamentals
+7. IP addresses, CIDR, DNS, HTTP/HTTPS and ports
+8. Public vs private networks
+9. Subnets, routing, NAT and firewalls
+10. Git and GitHub: clone, commit, push, pull, branch, merge and pull requests
+11. JSON and YAML basics
+12. Cloud computing, regions, availability zones and shared responsibility
+Hands-on lab: Create a Linux VM, connect using SSH, write a Bash script, and publish a project to GitHub.
+
+Module 2: AWS Fundamentals for Terraform
+WEEK 2 · BEGINNER
+Topics
+1. AWS global infrastructure
+2. IAM users, roles, policies and least privilege
+3. AWS CLI installation and profiles
+4. EC2 instances, AMIs and key pairs
+5. Amazon VPC and subnet architecture
+6. Internet Gateway and NAT Gateway
+7. Route tables and security groups
+8. S3 buckets and object storage
+9. Application Load Balancer (ALB)
+10. Auto Scaling Groups
+11. RDS fundamentals
+12. CloudWatch, CloudTrail and AWS billing
+13. AWS credentials and temporary-role authentication
+Hands-on lab: Deploy an EC2 instance, configure a VPC and security group, and connect through SSH or Systems Manager.
+
+Module 3: Infrastructure as Code and Terraform Introduction
+WEEK 3 · FOUNDATION
+Topics
+1. What is Infrastructure as Code (IaC)?
+2. Manual infrastructure vs automated infrastructure
+3. Declarative vs imperative configuration
+4. Terraform vs Ansible vs CloudFormation
+5. Terraform architecture and providers
+6. Terraform Community Edition vs HCP Terraform
+7. Installing Terraform CLI
+8. Installing VS Code and Terraform extension
+9. Terraform Registry
+10. Provider version constraints
+11. Provider configuration and authentication
+12. Understanding the Terraform dependency graph
+13. Understanding state and desired infrastructure
+Core commands
+terraform version
+terraform init
+terraform fmt
+terraform validate
+terraform plan
+terraform apply
+terraform show
+terraform destroy
+Hands-on lab: Create your first AWS S3 bucket or EC2 instance using Terraform and destroy it safely afterward.
+
+Module 4: Terraform Configuration Language (HCL)
+WEEK 4 · FOUNDATION
+Topics
+1. HCL syntax and structure
+2. Terraform blocks and arguments
+3. terraform block and required_providers
+4. provider block
+5. resource block
+6. data block
+7. Input variables and output values
+8. Local values
+9. Data types: string, number, bool, list, map, set, object, tuple
+10. Expressions and interpolations
+11. Conditional expressions
+12. Built-in functions
+13. File structure: main.tf, variables.tf, outputs.tf, versions.tf
+14. .tfvars and .auto.tfvars
+15. Validation rules and variable precedence
+16. .terraform.lock.hcl and version pinning
+Hands-on lab: Deploy a configurable AWS EC2 instance using input variables, locals, outputs and environment-specific variable files.
+
+Module 5: Terraform Intermediate Concepts
+WEEK 5 · INTERMEDIATE
+Topics
+1. Terraform resource references
+2. Implicit and explicit dependencies
+3. depends_on
+4. count meta-argument
+5. for_each meta-argument
+6. for expressions
+7. dynamic blocks
+8. Splat expressions
+9. null and optional attributes
+10. Lifecycle meta-argument
+11. create_before_destroy
+12. prevent_destroy
+13. ignore_changes
+14. replace_triggered_by
+15. Preconditions and postconditions
+16. check blocks
+17. terraform console
+Hands-on lab: Automatically deploy multiple EC2 instances and security groups using for_each, conditional logic and dynamic blocks.
+
+Module 6: Terraform Modules and Reusability
+WEEK 6 · INTERMEDIATE
+Topics
+1. What are Terraform modules?
+2. Root module vs child module
+3. Creating local modules
+4. Public modules from Terraform Registry
+5. Module inputs and outputs
+6. Module versioning
+7. Module dependency handling
+8. Module composition patterns
+9. Nested modules
+10. Reusable EC2, VPC and S3 modules
+11. Module documentation
+12. Module testing strategies
+13. Module design best practices
+14. Publishing and maintaining shared modules
+Hands-on lab: Build reusable VPC, EC2 and S3 modules that support development and production environments.
+
+Module 7: Terraform State Management
+WEEK 7 · CRITICAL JOB SKILL
+Topics
+1. What is Terraform state?
+2. terraform.tfstate structure
+3. Local state vs remote state
+4. Sensitive information in state files
+5. State locking and concurrency
+6. S3 remote backend
+7. S3 native locking using use_lockfile
+8. Legacy DynamoDB state locking and migration
+9. State encryption and access controls
+10. State migration
+11. terraform state list
+12. terraform state show
+13. terraform state mv
+14. terraform state rm
+15. terraform import and import blocks
+16. Drift detection and reconciliation
+17. moved and removed blocks
+18. Remote-state dependencies and safe access patterns
+19. State recovery and backups
+Hands-on lab: Configure an S3 remote backend with versioning, encryption and locking, then import an existing AWS resource.
+
+Module 8: Real-World AWS Infrastructure with Terraform
+WEEK 8 · PRACTICAL AWS
+Topics
+1. VPC creation using Terraform
+2. Public and private subnet design
+3. Internet Gateway and route tables
+4. NAT Gateway configuration
+5. Security groups and network ACLs
+6. EC2 instances and launch templates
+7. Application Load Balancer
+8. Target groups and listener rules
+9. Auto Scaling Groups
+10. S3 storage and bucket policies
+11. IAM roles and instance profiles
+12. RDS database provisioning
+13. Route 53 DNS records
+14. ACM and HTTPS
+15. CloudWatch monitoring
+16. Multi-AZ infrastructure design
+Hands-on project: Deploy a highly available AWS web application architecture using Terraform.
+
+Module 9: Advanced Terraform Concepts
+WEEK 9 · ADVANCED
+Topics
+1. Advanced HCL expressions
+2. Complex nested variables and objects
+3. Provider aliases
+4. Multiple AWS regions and accounts
+5. Provider version management
+6. Terraform dependency graph debugging
+7. Terraform CLI workspaces
+8. Workspaces vs separate environment directories
+9. terraform plan -out
+10. terraform apply with saved plans
+11. terraform plan -refresh-only
+12. Terraform import and configuration generation
+13. Resource replacement strategies
+14. Terraform provider and module upgrades
+15. Managing secrets using AWS Secrets Manager
+16. Ephemeral values and write-only arguments
+17. Terraform execution performance
+18. Provisioners and their limitations
+19. terraform_data resource
+20. Terraform troubleshooting techniques
+Hands-on lab: Build multi-region development and production configurations using provider aliases and environment isolation.
+
+Module 10: Production-Ready Terraform Architecture
+WEEK 10 · ADVANCED
+Topics
+1. Production Terraform repository structure
+2. Multi-environment architecture
+3. Infrastructure separation by responsibility
+4. Remote backend strategies
+5. State isolation and blast radius
+6. AWS multi-account architecture
+7. Cross-account IAM roles
+8. Least-privilege authentication
+9. Infrastructure naming conventions
+10. Required resource tagging
+11. Secrets management
+12. Encryption at rest and in transit
+13. Network security architecture
+14. Disaster recovery fundamentals
+15. Infrastructure backup strategies
+16. High availability and scalability
+17. Safe infrastructure updates
+18. Rollback and recovery planning
+19. Cost optimization and lifecycle management
+20. Production code review standards
+Hands-on lab: Create separate development, staging and production environments using reusable Terraform modules and isolated state.
+
+Module 11: Terraform CI/CD Automation
+WEEK 11 · DEVOPS WORKFLOW
+Topics
+1. CI/CD fundamentals
+2. GitHub Actions introduction
+3. GitHub Actions YAML workflows
+4. Running Terraform in CI
+5. Automated terraform fmt checks
+6. Automated terraform validate checks
+7. Automated terraform plan
+8. Pull-request plan reviews
+9. Approval-controlled deployments
+10. Running terraform apply after approval
+11. GitHub Actions environments
+12. AWS OIDC authentication
+13. Avoiding permanent AWS access keys
+14. Remote state in CI/CD
+15. Provider caching and version pinning
+16. Managing concurrent deployments
+17. Terraform pipeline failures
+18. GitHub branch protection rules
+19. Workflow permissions and secret handling
+20. Infrastructure deployment audit trails
+Hands-on project: Build a GitHub Actions pipeline that automatically validates and plans Terraform changes, then applies approved changes to AWS.
+
+Module 12: Terraform Security, Testing and Policy
+WEEK 12 · DEVSECOPS
+Topics
+1. Infrastructure security fundamentals
+2. Terraform code security
+3. AWS IAM least privilege
+4. IAM policies for CI/CD
+5. Secrets management best practices
+6. Sensitive variables and outputs
+7. Terraform state security
+8. Encryption and state access controls
+9. Checkov installation and scanning
+10. Trivy misconfiguration scanning
+11. TFLint static analysis
+12. Terraform built-in test framework (terraform test)
+13. Unit-style tests and integration tests
+14. Mock providers and test resources
+15. Preconditions, postconditions and assertions
+16. HCP Terraform policy enforcement
+17. Sentinel fundamentals
+18. OPA/Rego fundamentals
+19. Policy-as-Code concepts
+20. Cost-estimation tools and guardrails
+21. Drift detection
+22. Compliance checks in CI/CD
+Hands-on lab: Build a secure Terraform repository that runs TFLint, Checkov, formatting, validation and Terraform tests before deployments.
+
+Module 13: HCP Terraform and Team Collaboration
+WEEK 13 · ENTERPRISE WORKFLOW
+Topics
+1. HCP Terraform architecture
+2. Organizations, projects and workspaces
+3. Remote state storage
+4. Remote execution
+5. CLI-driven vs VCS-driven workflows
+6. Workspace variables and variable sets
+7. Project and workspace permissions
+8. Team access and RBAC
+9. Run triggers
+10. Private module registry
+11. Managed Terraform runs
+12. Drift detection capabilities
+13. Policy enforcement
+14. Workspace-to-workspace dependencies
+15. Auditability and team collaboration
+16. HCP Terraform vs self-managed automation
+Hands-on lab: Connect a GitHub repository to HCP Terraform and deploy an infrastructure change through a version-controlled team workflow.
+
+Module 14: Troubleshooting and Real-World Operations
+WEEK 14 · OPERATIONS
+Topics
+1. Terraform initialization errors
+2. Provider installation failures
+3. Authentication and authorization failures
+4. AWS permissions errors
+5. Resource dependency errors
+6. State lock conflicts
+7. Terraform drift
+8. State migration failures
+9. Missing resource errors
+10. Duplicate infrastructure management
+11. Accidental resource replacement
+12. Circular dependencies
+13. Multi-region deployment failures
+14. Terraform plan discrepancies
+15. Debugging with TF_LOG
+16. Inspecting provider and module behavior
+17. Resource import troubleshooting
+18. Safe recovery after a failed apply
+19. Infrastructure incident documentation
+20. Production change management
+Hands-on lab: Deliberately introduce configuration, state and IAM errors in a sandbox environment and practice safe diagnosis and recovery.
+
+Module 15: Terraform Portfolio and Capstone Projects
+WEEK 15 · PROJECT DELIVERY
+Develop and document the portfolio projects below. Each project should include a README, architecture diagram, Terraform source code, setup instructions, validation steps and cleanup instructions.
+
+Module 16: Certification and Job Preparation
+WEEK 16 · CAREER PREPARATION
+Topics
+1. Terraform Associate certification preparation
+2. Review Terraform architecture and CLI
+3. Understand Terraform state and backends
+4. Review modules and HCL expressions
+5. Terraform lifecycle and dependencies
+6. Practice troubleshooting interview scenarios
+7. Infrastructure design interview questions
+8. AWS networking interview revision
+9. GitHub Actions and CI/CD interviews
+10. Terraform security scenarios
+11. Explain infrastructure projects to interviewers
+12. Write a Terraform-focused resume
+13. GitHub portfolio optimization
+14. LinkedIn profile preparation
+15. Mock technical interviews
+16. Live infrastructure coding practice
+17. Understanding junior DevOps job descriptions
+18. Applying for cloud and infrastructure positions
+
+6 Hands-on Terraform projects
+Project 1: AWS EC2 Automation
+Deploy EC2, IAM role and security group through Terraform. Parameterize the instance configuration and publish instructions to GitHub.
+Skills: Providers, resources, variables, outputs, CLI
+
+Project 2: Custom AWS VPC
+Create public/private subnets, route tables, internet connectivity and restricted security groups.
+Skills: Networking, CIDR, routing, resource dependencies
+
+Project 3: Three-Tier AWS Infrastructure
+Provision a load balancer, private application servers and an RDS database using reusable modules and multiple availability zones.
+Skills: VPC, ALB, EC2, RDS, modules, high availability
+
+Project 4: Terraform CI/CD
+Implement GitHub Actions, OIDC, automatic plans, security scans and reviewed deployments.
+Skills: GitHub Actions, OIDC, plan approval, DevSecOps
+
+Project 5: Kubernetes Infrastructure with Terraform
+Provision an AWS EKS cluster, networking, node groups and IAM integrations using maintained Terraform modules.
+Skills: EKS, IAM, Kubernetes, networking, modules
+
+Project 6: Production-Style Infrastructure Platform
+Design separate development, staging and production environments with isolated remote state, reusable modules, security checks, GitHub workflows, monitoring and documentation.
+Skills: End-to-end infrastructure engineering
